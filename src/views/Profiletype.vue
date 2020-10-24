@@ -1,20 +1,25 @@
 <template>
   <div class="profile">
-    <h1>Page BDDI type</h1>
+    <BddiType/>
   </div>
 </template>
 
 <script>
-export default {
+// @ is an alias to /src
+import BddiType from '../components/BddiType'
 
+export default {
+  components: {
+    BddiType
+  }
 }
 </script>
 
 <style lang="scss" scoped>
   .profile{
     width: 100%;
-    height: 90vh;
-    background-color: grey;
+    // height: 100vh;
+    background-image: linear-gradient(to bottom, #FAFAFA, #FCD3D3);
   }
   h1{
     color: white;
