@@ -4,7 +4,6 @@
         <canvas id="myChart"></canvas>
         <div class="icones">
             <a href="javascript:void(0)" id="btn1"><i class="icon-sortir"></i></a>
-            <!-- <a href="javascript:void(0)" v-on:click="btn1"><i class="icon-sortir"></i></a> -->
             <a href="javascript:void(0)" id="btn2"><i class="icon-budget"></i></a>
             <a href="javascript:void(0)" id="btn3"><i class="icon-brevage"></i></a>
             <a href="javascript:void(0)" id="btn4"><i class="icon-cbverre"></i></a>
@@ -269,6 +268,7 @@ export default {
     barGradient.addColorStop(0, '#EFC042')
     barGradient.addColorStop(1, '#FF9300')
 
+    // eslint-disable-next-line no-unused-vars
     const daysChart = new Chart(ctx2, {
       type: 'bar',
       data: {
